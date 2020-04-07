@@ -1,0 +1,7 @@
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\bin\Debug\Practica_Clase_3.exe.config
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\bin\Debug\Practica_Clase_3.exe
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\bin\Debug\Practica_Clase_3.pdb
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\obj\Debug\Practica_Clase_3.csprojAssemblyReference.cache
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\obj\Debug\Practica_Clase_3.csproj.CoreCompileInputs.cache
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\obj\Debug\Practica_Clase_3.exe
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_3\Practica_Clase_3\obj\Debug\Practica_Clase_3.pdb
