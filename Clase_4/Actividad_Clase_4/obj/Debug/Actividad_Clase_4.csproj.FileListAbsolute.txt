@@ -1,0 +1,7 @@
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\bin\Debug\Actividad_Clase_4.exe.config
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\bin\Debug\Actividad_Clase_4.exe
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\bin\Debug\Actividad_Clase_4.pdb
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\obj\Debug\Actividad_Clase_4.csprojAssemblyReference.cache
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\obj\Debug\Actividad_Clase_4.csproj.CoreCompileInputs.cache
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\obj\Debug\Actividad_Clase_4.exe
+C:\Users\brian\OneDrive\Documentos\Clases_Labo_Prog_2\Clase_4\Actividad_Clase_4\obj\Debug\Actividad_Clase_4.pdb
