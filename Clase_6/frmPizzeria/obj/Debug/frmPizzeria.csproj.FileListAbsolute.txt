@@ -1,0 +1,12 @@
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\bin\Debug\frmPizzeria.exe.config
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\bin\Debug\frmPizzeria.exe
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\bin\Debug\frmPizzeria.pdb
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\bin\Debug\Pizzeria.dll
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\bin\Debug\Pizzeria.pdb
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.csprojAssemblyReference.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.Properties.Resources.resources
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.csproj.CopyComplete
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.exe
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\frmPizzeria\obj\Debug\frmPizzeria.pdb

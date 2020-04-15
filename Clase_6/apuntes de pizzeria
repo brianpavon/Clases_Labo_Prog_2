@@ -1,0 +1,22 @@
+ cuando voy a crear el pedido, lo primero que creo es el cliente, con ese cliente hago un pedido(se hace con implicit)
+
+
+ hacer en la clase pedido, un constructor privado que reciba un cliente y lo asigne al atributo cliente 
+ de esta clase
+ 
+ 
+ va a recibir una pizza y se va a sumar al array de pizzas
+ 
+2 pizzas van a ser iguales, si son de la misma coccion y gusto.
+
+
+EN WINDOWS FORM, UNA VEZ QUE ESTA TODO CARGADO EN MEMORIA, DESPUES EL CONSTRUCTOR,
+SE EJECUTA EL LOAD....
+
+
+WINDOWS FORM DE PIZZERIA:
+1)lista de cliente (con un boton agregar cliente)
+                     de ahi se abre otra pantalla, agregar cliente, con sus campos y 2 botones aceptar/cancelar
+						de aca una ventana nueva, con nuevo pedido, con un boton que diga pizza, con un boton de aceptar y cancelar
+																							ese va a los tipos de pizza
+2)se hubiera un cliente creado voy directo al pedido																									de ahi un combobox

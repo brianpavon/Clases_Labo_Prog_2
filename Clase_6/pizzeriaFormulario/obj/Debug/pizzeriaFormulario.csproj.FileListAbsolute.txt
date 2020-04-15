@@ -1,0 +1,15 @@
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\bin\Debug\pizzeriaFormulario.exe.config
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\bin\Debug\pizzeriaFormulario.exe
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\bin\Debug\pizzeriaFormulario.pdb
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\bin\Debug\EntidadesPizzeria.dll
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\bin\Debug\EntidadesPizzeria.pdb
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.csprojAssemblyReference.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.Form1.resources
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.frmCliente.resources
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.frmPedidos.resources
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.Properties.Resources.resources
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.csproj.GenerateResource.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.csproj.CoreCompileInputs.cache
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.csproj.CopyComplete
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.exe
+C:\Users\brian\Desktop\Clases_Labo_Prog_2\Clase_6\pizzeriaFormulario\obj\Debug\pizzeriaFormulario.pdb
