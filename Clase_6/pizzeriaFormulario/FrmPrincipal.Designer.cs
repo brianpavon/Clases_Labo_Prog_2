@@ -52,6 +52,7 @@
             this.listCliente.Name = "listCliente";
             this.listCliente.Size = new System.Drawing.Size(120, 212);
             this.listCliente.TabIndex = 1;
+            this.listCliente.SelectedIndexChanged += new System.EventHandler(this.listCliente_SelectedIndexChanged);
             // 
             // listPedidos
             // 

@@ -19,7 +19,7 @@ namespace EntidadesPizzeria
             this.tipoCoccion = tipoCoccion;
         }
 
-        public static bool operator == (Pizza pizza, Pizza pizzaDos)
+        public static bool operator == (Pizza pizzaUno, Pizza pizzaDos)
         {
             /*bool iguales = false; esto es el camino largo
             if(pizza.tipoCoccion == pizza2.tipoCoccion && pizza.gusto == pizza2.gusto)
@@ -28,9 +28,9 @@ namespace EntidadesPizzeria
             }
             return iguales;*/
             //este es el camino largo
-            if(!(pizza is null))
+            if(!(pizzaUno is null))
             {
-                return pizza.gusto == pizzaDos.gusto && pizza.tipoCoccion == pizzaDos.tipoCoccion;
+                return pizzaUno.gusto == pizzaDos.gusto && pizzaUno.tipoCoccion == pizzaDos.tipoCoccion;
             }
             return false;
             

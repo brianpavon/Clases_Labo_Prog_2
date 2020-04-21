@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntidadesPizzeria;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace pizzeriaFormulario
 {
     public partial class FrmPrincipal : Form
     {
+        //public static List<Cliente> clientes;
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -20,8 +22,14 @@ namespace pizzeriaFormulario
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
             frmCliente frmCliente = new frmCliente();
-            frmCliente.Show();
+            frmCliente.ShowDialog();
+            //this.listCliente_SelectedIndexChanged
 
+        }
+
+        private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //this.listCliente.Show(frmCliente.clientes.ToList());
         }
     }
 }

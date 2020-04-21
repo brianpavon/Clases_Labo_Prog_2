@@ -14,11 +14,12 @@ namespace pizzeriaFormulario
     public partial class frmPedidos : Form
     {
         public Pedido pedido;
-        private Cliente cliente;
+        public Cliente cliente;
+       
         public frmPedidos()
         {
             InitializeComponent();
-            this.cliente = cliente;
+            //this.cliente = cliente;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,15 +36,16 @@ namespace pizzeriaFormulario
 
         private void btnAgregarPizza_Click(object sender, EventArgs e)
         {
-            if (this.pedido.pizzas + new Pizza(this.cmbCantPizzas)) ;//le paso los parametros al constructor
-            {
-                cargarPizzas();//este metodo va a mostrar en el listbox de pedidos todo los pedidos
-            }
+            new Pizza(int.Parse(numericCantidad.Value.ToString()),cmbGustoPizza.Text,cmbTipoCoccion.Text);
+            //if (this.pedido.pizzas + new Pizza(this.cmbCantPizzas)) ;//le paso los parametros al constructor
+            //{
+            //    cargarPizzas();//este metodo va a mostrar en el listbox de pedidos todo los pedidos
+            //}
         }
-        private void cargarPizzas()
-        {
-            this.listpizzas.Items.Clear();
-            foreach
-        }
+        //private void cargarPizzas()
+        //{
+        //    this.listpizzas.Items.Clear();
+        //    foreach
+        //}
     }
 }
