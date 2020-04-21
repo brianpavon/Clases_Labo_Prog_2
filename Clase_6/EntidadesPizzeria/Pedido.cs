@@ -8,10 +8,10 @@ namespace EntidadesPizzeria
 {
     public class Pedido
     {
-        private bool envia;
-        private DateTime horaIngreso;
-        private DateTime horaRetiro;
-        private Pizza[] pizzas;
+        public bool envia;
+        public DateTime horaIngreso;
+        public DateTime horaRetiro;
+        public Pizza[] pizzas;
         Cliente cliente;
 
         private Pedido(Cliente cliente)//creo el cliente y el array de pizzas

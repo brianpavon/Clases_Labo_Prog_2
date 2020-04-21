@@ -28,33 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnAceptar = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.btnCrearCliente = new System.Windows.Forms.Button();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblApellido = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.txtDomicilio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtNombreCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 0;
+            this.txtNombreCliente.Location = new System.Drawing.Point(181, 86);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(100, 22);
+            this.txtNombreCliente.TabIndex = 0;
             // 
-            // btnAceptar
+            // btnCrearCliente
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(251, 86);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptar.TabIndex = 1;
-            this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnCrearCliente.Location = new System.Drawing.Point(151, 251);
+            this.btnCrearCliente.Name = "btnCrearCliente";
+            this.btnCrearCliente.Size = new System.Drawing.Size(155, 23);
+            this.btnCrearCliente.TabIndex = 1;
+            this.btnCrearCliente.Text = "Crear nuevo cliente";
+            this.btnCrearCliente.UseVisualStyleBackColor = true;
             // 
-            // NuevoPedido
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(31, 86);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(128, 17);
+            this.lblNombre.TabIndex = 2;
+            this.lblNombre.Text = "Nombre del Cliente";
+            // 
+            // lblApellido
+            // 
+            this.lblApellido.AutoSize = true;
+            this.lblApellido.Location = new System.Drawing.Point(31, 141);
+            this.lblApellido.Name = "lblApellido";
+            this.lblApellido.Size = new System.Drawing.Size(128, 17);
+            this.lblApellido.TabIndex = 4;
+            this.lblApellido.Text = "Apellido del Cliente";
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Location = new System.Drawing.Point(181, 136);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(100, 22);
+            this.txtApellido.TabIndex = 3;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(31, 197);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(134, 17);
+            this.lblDireccion.TabIndex = 6;
+            this.lblDireccion.Text = "Domicilio del Cliente";
+            // 
+            // txtDomicilio
+            // 
+            this.txtDomicilio.Location = new System.Drawing.Point(181, 197);
+            this.txtDomicilio.Name = "txtDomicilio";
+            this.txtDomicilio.Size = new System.Drawing.Size(100, 22);
+            this.txtDomicilio.TabIndex = 5;
+            // 
+            // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAceptar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblDireccion);
+            this.Controls.Add(this.txtDomicilio);
+            this.Controls.Add(this.lblApellido);
+            this.Controls.Add(this.txtApellido);
+            this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.btnCrearCliente);
+            this.Controls.Add(this.txtNombreCliente);
             this.Name = "frmCliente";
             this.Text = "Alta de Cliente";
             this.ResumeLayout(false);
@@ -64,7 +115,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnAceptar;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.Button btnCrearCliente;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblApellido;
+        private System.Windows.Forms.TextBox txtApellido;
+        private System.Windows.Forms.Label lblDireccion;
+        private System.Windows.Forms.TextBox txtDomicilio;
     }
 }

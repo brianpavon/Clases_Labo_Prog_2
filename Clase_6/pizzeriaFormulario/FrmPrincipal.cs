@@ -7,24 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using EntidadesPizzeria;
 
 namespace pizzeriaFormulario
 {
-    public partial class Form1 : Form
+    public partial class FrmPrincipal : Form
     {
-        //vamos a crear un atributo en esta clase del formulario
-        private string informacion = "hola mundo";
-
-
-        public Form1()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
-            textBox1.Text = informacion;
+            frmCliente frmCliente = new frmCliente();
+            frmCliente.Show();
+
         }
     }
 }
