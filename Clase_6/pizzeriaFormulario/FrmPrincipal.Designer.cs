@@ -36,7 +36,7 @@
             // 
             // btnNuevoCliente
             // 
-            this.btnNuevoCliente.Location = new System.Drawing.Point(36, 318);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(117, 124);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.Size = new System.Drawing.Size(136, 23);
             this.btnNuevoCliente.TabIndex = 0;
@@ -48,9 +48,9 @@
             // 
             this.listCliente.FormattingEnabled = true;
             this.listCliente.ItemHeight = 16;
-            this.listCliente.Location = new System.Drawing.Point(36, 80);
+            this.listCliente.Location = new System.Drawing.Point(2, 162);
             this.listCliente.Name = "listCliente";
-            this.listCliente.Size = new System.Drawing.Size(120, 212);
+            this.listCliente.Size = new System.Drawing.Size(399, 212);
             this.listCliente.TabIndex = 1;
             this.listCliente.SelectedIndexChanged += new System.EventHandler(this.listCliente_SelectedIndexChanged);
             // 
@@ -58,14 +58,14 @@
             // 
             this.listPedidos.FormattingEnabled = true;
             this.listPedidos.ItemHeight = 16;
-            this.listPedidos.Location = new System.Drawing.Point(210, 113);
+            this.listPedidos.Location = new System.Drawing.Point(407, 162);
             this.listPedidos.Name = "listPedidos";
-            this.listPedidos.Size = new System.Drawing.Size(120, 228);
+            this.listPedidos.Size = new System.Drawing.Size(389, 212);
             this.listPedidos.TabIndex = 2;
             // 
             // btnNuevoPedido
             // 
-            this.btnNuevoPedido.Location = new System.Drawing.Point(236, 80);
+            this.btnNuevoPedido.Location = new System.Drawing.Point(570, 124);
             this.btnNuevoPedido.Name = "btnNuevoPedido";
             this.btnNuevoPedido.Size = new System.Drawing.Size(75, 23);
             this.btnNuevoPedido.TabIndex = 3;

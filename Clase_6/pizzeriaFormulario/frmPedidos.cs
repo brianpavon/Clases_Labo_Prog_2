@@ -30,8 +30,8 @@ namespace pizzeriaFormulario
         private void btnCrearPedido_Click(object sender, EventArgs e)
         {
             //this.pedido = cliente;//aca creo un nuevo pedido
-            this.pedido.horaIngreso = DateTime.Now;
-            this.pedido.envia = chkbEnvio.Checked;//si tilda se agrega true en el atributo envia
+            //this.pedido.horaIngreso = DateTime.Now;
+            //this.pedido.envia = chkbEnvio.Checked;//si tilda se agrega true en el atributo envia
         }
 
         private void btnAgregarPizza_Click(object sender, EventArgs e)

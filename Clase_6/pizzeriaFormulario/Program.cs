@@ -17,7 +17,7 @@ namespace pizzeriaFormulario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());//instancia un objeto en este caso el formulario
+            Application.Run(new FrmPrincipal());//instancia un objeto en este caso el formulario
         }
     }
 }

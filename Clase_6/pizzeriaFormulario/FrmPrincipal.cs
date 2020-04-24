@@ -13,7 +13,7 @@ namespace pizzeriaFormulario
 {
     public partial class FrmPrincipal : Form
     {
-        //public static List<Cliente> clientes;
+        public static List<Cliente> clientes;
         public FrmPrincipal()
         {
             InitializeComponent();
@@ -21,15 +21,27 @@ namespace pizzeriaFormulario
 
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
+
             frmCliente frmCliente = new frmCliente();
+            clientes = new List<Cliente>();
             frmCliente.ShowDialog();
-            //this.listCliente_SelectedIndexChanged
+            listCliente.Items.Add(clientes);
+            listCliente.SelectedItem.ToString();
 
         }
+       
 
         private void listCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
             //this.listCliente.Show(frmCliente.clientes.ToList());
+            //foreach (Cliente aux in clientes)
+            //{
+
+            //    listCliente.Items.Add(frmCliente.clientes);
+            //}
+            //listCliente.Items.Add(clientes);
+            
+            
         }
     }
 }
