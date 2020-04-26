@@ -35,6 +35,7 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtDomicilio = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNombreCliente
@@ -46,9 +47,9 @@
             // 
             // btnCrearCliente
             // 
-            this.btnCrearCliente.Location = new System.Drawing.Point(151, 251);
+            this.btnCrearCliente.Location = new System.Drawing.Point(34, 258);
             this.btnCrearCliente.Name = "btnCrearCliente";
-            this.btnCrearCliente.Size = new System.Drawing.Size(155, 23);
+            this.btnCrearCliente.Size = new System.Drawing.Size(155, 42);
             this.btnCrearCliente.TabIndex = 1;
             this.btnCrearCliente.Text = "Crear nuevo cliente";
             this.btnCrearCliente.UseVisualStyleBackColor = true;
@@ -95,11 +96,22 @@
             this.txtDomicilio.Size = new System.Drawing.Size(100, 22);
             this.txtDomicilio.TabIndex = 5;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(205, 258);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(145, 42);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // frmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 324);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblDireccion);
             this.Controls.Add(this.txtDomicilio);
             this.Controls.Add(this.lblApellido);
@@ -107,7 +119,11 @@
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnCrearCliente);
             this.Controls.Add(this.txtNombreCliente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta de Cliente";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +139,6 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.TextBox txtDomicilio;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

@@ -36,11 +36,24 @@ namespace pizzeriaFormulario
 
         private void btnAgregarPizza_Click(object sender, EventArgs e)
         {
-            new Pizza(int.Parse(numericCantidad.Value.ToString()),cmbGustoPizza.Text,cmbTipoCoccion.Text);
+            Pizza pizza = new Pizza(int.Parse(numericCantidad.Value.ToString()),cmbGustoPizza.Text,cmbTipoCoccion.Text);
+            listPizzas.Items.Add(pizza.MostrarDatos());
+            numericCantidad.Value = 0;
+            cmbGustoPizza.Text = string.Empty;
+            cmbTipoCoccion.Text = string.Empty;
             //if (this.pedido.pizzas + new Pizza(this.cmbCantPizzas)) ;//le paso los parametros al constructor
             //{
             //    cargarPizzas();//este metodo va a mostrar en el listbox de pedidos todo los pedidos
             //}
+        }
+
+        private void btnCancelarPedido_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Quiere cancelar el pedido?","Cancelar Pedido",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
         //private void cargarPizzas()
         //{

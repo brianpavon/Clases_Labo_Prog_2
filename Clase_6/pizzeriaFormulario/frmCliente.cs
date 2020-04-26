@@ -29,5 +29,13 @@ namespace pizzeriaFormulario
             //FrmPrincipal.listCliente.Items.Add(frmCliente.clientes);
             this.Close();
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Desear cancelar el alta?","Cancelar alta",MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +37,15 @@ namespace EntidadesPizzeria
             this.apellido = apellido;
         }
 
+        public static string MostrarDatos(Cliente cliente)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Nombre: " + cliente.nombre);
+            sb.Append(" Apellido: " + cliente.apellido);
+            sb.Append(" Direccion: " + cliente.domicilio);
+
+            return sb.ToString();
+        }
 
 
 

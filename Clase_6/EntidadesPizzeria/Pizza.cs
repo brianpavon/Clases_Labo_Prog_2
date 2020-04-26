@@ -54,6 +54,15 @@ namespace EntidadesPizzeria
             
         }
 
+        public string MostrarDatos()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Cantidad: " + this.cantidad);
+            sb.Append(" Gusto: " + this.gusto);
+            sb.Append(" Coccion: " + this.tipoCoccion);
+
+            return sb.ToString();
+        }
 
     }
 }
