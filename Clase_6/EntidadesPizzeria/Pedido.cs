@@ -11,13 +11,13 @@ namespace EntidadesPizzeria
         public bool envia;
         public DateTime horaIngreso;
         public DateTime horaRetiro;
-        public Pizza[] pizzas;
+        public List<Pizza> pizzas;
         Cliente cliente;
 
         private Pedido(Cliente cliente)//creo el cliente y el array de pizzas
         {
             this.cliente = cliente;
-            this.pizzas = new Pizza[8];//creo el array con esta cantidad maxima
+            this.pizzas = new List<Pizza>();//creo el array con esta cantidad maxima
             
         }
 
@@ -30,7 +30,7 @@ namespace EntidadesPizzeria
 
         public static bool operator + (Pedido pedido, Pizza pizza)
         {
-            for (int i = 0; i < pedido.pizzas.Length; i++)//buscar que exista la pizza en el array de pizzas
+            for (int i = 0; i < pedido.pizzas.Count; i++)//buscar que exista la pizza en el array de pizzas
             {//si existe y son iguales las suma
                 if(pedido.pizzas[i] + pizza)
                 {
@@ -38,11 +38,11 @@ namespace EntidadesPizzeria
                 }
             }
              //agregar la pizza si no existe          
-            for (int i = 0; i < pedido.pizzas.Length; i++)
+            for (int i = 0; i < pedido.pizzas.Count; i++)
             {
                 if(pedido.pizzas[i] is null)
                 {
-                    pedido.pizzas[i] = pizza;
+                    pedido.pizzas.Add(pizza);
                     return true;                    
                 }
             }
