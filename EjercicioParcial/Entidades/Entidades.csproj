@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CasaMusica.cs" />
     <Compile Include="InstrumentoCuerda.cs" />
     <Compile Include="InstrumentoMusical.cs" />
     <Compile Include="InstrumentoPercusion.cs" />
