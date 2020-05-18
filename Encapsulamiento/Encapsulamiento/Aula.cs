@@ -30,7 +30,10 @@ namespace Encapsulamiento
         //private string materia;
         //le paso un enumerador mejor
         private Materias materia;
+        public Aula()
+        {
 
+        }
         public Aula(Materias materia)
         {
             this.materia = materia;

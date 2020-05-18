@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Alumno.cs" />
     <Compile Include="Aula.cs" />
+    <Compile Include="EdadAlumnoException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

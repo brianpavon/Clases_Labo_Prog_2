@@ -17,6 +17,13 @@ namespace Encapsulamiento
 
         public Alumno(string nom,string ape,int edad,int leg)
         {
+            //esto tambien puedo hacerlo en la propiedad
+            if(edad < 16)
+            {
+                //creo una excepcion para este tipo de solucion, en este caso si alguien me ingresa una edad
+                //menor a 16 años
+                throw new Exception("El alumno no puede ser menor de 16 años");
+            }
             this.nombre = nom;
             this.apellido = ape;
             this.edad = edad;
@@ -60,13 +67,33 @@ namespace Encapsulamiento
         }
 
         //Ejemplo de hacer alguna operacion en la propiedad, no es lo mas normal
+        //public int Edad
+        //{
+        //    set 
+        //    {
+        //        this.año = DateTime.Now.Year;
+        //        this.categoria = año - value;
+        //        this.edad = value;
+        //    }
+        //}
+
         public int Edad
         {
-            set 
+            set
             {
-                this.año = DateTime.Now.Year;
-                this.categoria = año - value;
+                if (edad < 16)
+                {
+                    //creo una excepcion para este tipo de solucion, en este caso si alguien me ingresa una edad
+                    //menor a 16 años
+                    //throw new Exception("El alumno no puede ser menor de 16 años");
+                    //si tengo una clase que hace las excepciones las puedo usar
+                    throw new EdadAlumnoException(value,"El alumno no puede ser menor de 16 años");
+                }
                 this.edad = value;
+            }
+            get
+            {
+                return this.edad;
             }
         }
     }
