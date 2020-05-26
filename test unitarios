@@ -1,0 +1,31 @@
+stack tracer... es el camino donde el codigo fue rompiendo, todos los errores donde se fueron lanzando
+
+si hago una exception, siempre tiene que heredar de la clase Exceptionç
+
+inner exception, es como la pila de excepciones que se fueron generando, o se lanzaron
+
+
+para deapilar las excepciones,
+while(ex.innerexeption != null)
+	muestro el mensaje del inner exeption
+	y asi hasta que desapile todas las excepciones
+	
+
+CUAL ES LA DIFERENCIA DE PONER EL FINALLY O NO? buscaaarrrr
+
+
+HAY CREAR UN NUEVO PROYECTO QUE SE LLAME PROYECTO DE PRUEBAS
+proyecto de prueba unitaria de framework
+
+
+LOS TEST UNITARIOS SE CREAN
+
+PRUEBAS FUNCIONALES
+	caja blanca: importa el codigo, se ve mas en detalle
+	
+	caja negra:probamos con ejecutable, no hace falta el codigo 
+
+
+TDD, es un patron de diseños, escribir el codigo que falle, despues el que pase, luego el que hace que el codigo quede mejor
+
+podemos crear varios test uno de entidades y otro de forms por ejecutable

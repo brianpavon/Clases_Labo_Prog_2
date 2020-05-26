@@ -1,0 +1,36 @@
+List....
+
+Generics...
+configuro el tipo de dato, que quiero que sea un atributo de cierta clase
+
+en tiempo de ejecucion, se pasa ese tipo de dato,
+sirve para definir atributos cuando yo creo el objeto
+
+si pongo class Moto <T> where T: struct --solo son validos int,char,etc, VALORES
+							   : class -- listas, arrays, clases (tipos por referencias)
+
+
+where define lo que tiene que suceder en esa letra,como una limitacion
+    si usamos un new(), lo ideal es que vaya al final de la definicion de la clase
+
+podemos hacer que un metodo sea generico
+ ejemplo:
+ public void MostrarDatos<T>(T mensaje)
+ {//va a recibir un tipo de dato T y va hacer que el usa el metodo
+    
+    
+ 
+ }
+ 
+ se define el tipo de dato que se va a usar en la variable que hay adentro
+
+CUANDO PROGRAMES UN METODO, HAY QUE TENER EN CUENTA
+QUE HAY QUE LIMITAR LO QUE VA HACER, PARA QUE NO HAGA CUALQUIER
+COSA
+
+puedo limitar dentro de los metodos tambien:
+
+public void MostrarDatos<T>(T aux) where T : struct --solo va a tomar los datos valor
+{
+
+}
