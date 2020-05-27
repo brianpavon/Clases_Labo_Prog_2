@@ -29,3 +29,5 @@ PRUEBAS FUNCIONALES
 TDD, es un patron de diseños, escribir el codigo que falle, despues el que pase, luego el que hace que el codigo quede mejor
 
 podemos crear varios test uno de entidades y otro de forms por ejecutable
+
+HAY QUE ACLARAR COMO QUIERO QUE TERMINE EL TEST
