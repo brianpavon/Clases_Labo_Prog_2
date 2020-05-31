@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_47
 {
-    class EquipoFutbol
+    public class EquipoFutbol : Equipo
     {
+        public EquipoFutbol(string nombre,DateTime fecha):base(nombre,fecha)
+        {
+            this.Nombre = nombre;
+            this.FechaCreacion = fecha;
+        }
     }
 }
