@@ -1,0 +1,71 @@
+Sirve para guardar informacion...
+por ejemplo un LOG... se guardan los errores por ej...
+es un registro de eventos. representa cosas que fueron pasando,
+si quisieramos ver que pasos fue haciendo el usuario, podriamos ponerlo en este log
+
+
+hasta el momento nuestros datos se perdian al momento de cerrar la app
+
+Escritura y lectura de texto:
+generalmente, se usa para cargar errores...
+
+escribir un archivo texto:
+   es maso como C, la escritura
+   1)se crea un archivo de texto , que va a ser escrito
+   2)se escribe en ese archivo
+   3)se cierra
+   4)c# lo deja liberado para que se pueda usar
+   
+Hay 2 formas de hacerlo:
+
+creamos un objeto de la clase StreamWriter, esto crea un archivo en un directorio
+se pone @, para que no tome la \ como clausula de escape... sino tendria que poner \\
+
+este ojbeto de StreamWriter tiene metodos..
+
+estos son de instancia
+Write
+WriteLine(le da un enter al final)
+
+declaramos using(StreamWriter sw = new StreamWriter()
+{
+
+sw.Close();// cierra el archivo y lo libera
+pero para evitar esto ponemos el using, al principio y cuando ejectuta las lineas de codigo lo cierra y libera
+}
+
+StreamWriter, tiene varios constructores, por ejemplo el que toma un bool
+false-->sobreescribe
+true--> agrega informacion, la concatena
+
+
+Para leer un archivo:
+StreamReader, tambien creamos un objeto
+y lo cargo con el path(ruta) donde esta el archivo a leer
+
+lee cada linea del archivo y lo cargamos en un string con un readline
+cuando le ponemos null, toma hasta que no haya mas espacio abajo de lo que escrito
+
+
+HAY QUE VER LAS EXCEPCIONES QUE ESTAN EN LA PPT DEL CLASSROOM
+
+USAMOS DIRECTORY:
+Para escribir en ese path, podemos ver que esa ruta exista
+usamos Directory.Exist(la ruta del archivo); devuelve un bool de si existe o no
+
+Directory.Delete(borra el archivo); en la sobrecarga recursiva borra todo lo de la carpeta y la carpeta
+
+Directory.GetFiles(devuelve un array de string,obteniendo todos los archivos que estan en la carpeta);
+si uso la sobrecarga del filtro, me puede servir para leer ciertos archivos
+
+Directory.CreateDirectory(crea una nueva carpeta en esa direccion);
+
+//PARA AGREGARLA POR EJ EN LA CARPETA BASE
+
+AppDomain.CurrentDomain.BaseDirectory + "NOMBRE ARCHIVO";
+
+Enviroment.CurretDirectory --> lo crea en el debug
+
+
+
+

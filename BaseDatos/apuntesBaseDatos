@@ -1,0 +1,182 @@
+mi instancia SQLEXPRESS01
+administradores LAPTOP-Q1OJ1113\brian
+caracteristicas instaladas SQLENGINE
+
+
+Los registros se separan en tablas
+
+Las columnas tienen un nombre unico por tabla
+
+
+En todas las bases de dato relacionales hay un nro inequivo y que no se repite
+como un id
+
+Cada vez que hago un registro nuevo, podemos decirle a la tabla
+que genere el id solo..
+ cada tabla es un tupla
+ existen relaciones entre tablas, que nos permiten hacer mas rapida y facil la busqueda
+ 
+ Se crean 2 archivos,
+ con un editor de texto no se ven datos legibles,no podemos borrar archivos
+ adjuntados a la base
+ 
+ 
+ NEW QUERY:
+ empezamos a escribir una nueva base de dato... en la que estan en SQL
+ 
+ para guardar cosas hay que haer tablas...
+ 
+ 
+ insert into "nombre de la tabla" 
+ ("campos que voy a insentar en la tabla")
+ values
+ (valores que voy a insertar)
+ (1,'para texto comilla simple')
+  presionamos F5 y actualizamos
+
+select (columnas) --> le decimos que es lo que vamos a seleccionar
+from (de que tabla)--> de donde lo vamos a seleccionar
+
+Para aplicar un filtro
+where descripcion like 'San%' (en nuestro caso va a traer las provincias con ese filtro)
+or id = 23 (va hacer lo de arriba o lo de abajo)
+
+between "un nro" and "otro"
+in("nro",nro,nro) --> busca en esos nros.
+
+order by "nombre de campo" --> y ordena por algun parametro
+
+--COMENTARIO DE UNA LINEA EN SQL 
+/* 
+	COMENTARIO MULTILINEA SQL
+*/
+
+getdate()---funcion muy utilizada, para guardar a que hora se hicieron modificaciones
+
+
+COMODINES:
+% -->antes o despues puede haber cualquier cosas
+_ --> cada guion bajo es un caracter
+
+
+PARA SABER POR EJ EL ID MAXIMO DE UNA TABLA
+
+select max(id) + 1 from localidad --> te devuelve el proximo id
+
+
+SI DIERA ESTE ERROR:
+Cannot insert explicit value for identity column in table 'Localidad'
+ when IDENTITY_INSERT is set to OFF.
+basicamente dice que no podes vos manejar el id, es autoincremental
+
+
+JOIN:
+une 2 grupos de datos, en nuestro ejemplo provincia y localidad
+
+inner --> agrega todo lo que esta en la interseccion del conjunto
+left join --> conjunto de izquierda,
+right join --> conjuno de la derecha
+
+Estructura:
+select "columnas"
+from "tablaA"
+inner join tablaB
+on "condicion de union"
+where "condicion de filtro de filas"
+order by "en base a que se va a ordenar, nombre de columna o numero de columnas"
+
+
+select *
+from provincia
+inner join localidad --> inner trae la interseccion
+on provincia.id = localidad.idprovincia //condicion por las que uno,aca linkeo una con otra,relaciono de esa manera
+where localida.nombre like '%martin%' //aca pongo un filtro para que traiga solo con esa descripcion
+order by nombre //ordena por el nombre
+
+el as se usa para mostrar solo lo que quiero que se vea en la consulta
+
+
+PARA MODIFICAR ALGO:
+
+update Localidad
+set nombre = 'Gerli' //pasarian todos a ser gerli, debo filtrar
+where id = 19180 //este es el id del ejemplo
+
+--------------------------------------------------------------
+| alt+F1 sobre una tabla, trae todos los campos de esa tabala |
+--------------------------------------------------------------
+
+INSERT
+insert int tabla
+(campos)
+values
+(valores)
+
+MODIFICAR
+update tabla
+set campo1 = valor1 , campo2 = valor2
+where condicion 
+
+------------------------------------------------------------------------------
+
+PARA ELIMINAR:
+delete Localidad2 --> deja la tabla vacia
+
+como se debe hacer
+
+select * from
+delete Localidad
+where id = 19180
+
+BAJA FISICA ES UN DELETE!!!!
+
+fechas se escriben: 'AAAAMMDD hh:mm:ss' --> sino se pone hora lo carga como 00:00.00
+
+
+-------------------------------------------
+AGRUPAR CONSULTAS:
+
+en nuestro ejemplo, cuantas localidades por provincia
+
+select count(Nombre), idProvincia sum(id)-->cuantos nombres distintos tengo, y suma los nombres !=
+from localidad
+group by idprovincia-->group by, es la condicion de agrupamiento
+order by 2
+
+select count(a.Nombre), a.idprovincia, b.descripcion -->nos va a mostrar nombres
+from Localidad a
+inner join Provincia b
+on a.idProvincia = b.id
+group by a.idProvincia, b.descripcion
+order by 2
+
+
+Si quiero filtrar por agrupacion, uso having
+
+select a.idProvincia, b.descripcion, count(a.id)
+from Localidad a
+inner join Provincia b
+on a.idProvincia= b.id
+where a.Nombre like 'a%' -->tienen a en el nombre, primer filtro
+group by a.idprovincia, b.descripcion
+having count(a.id) > 30 --> solo trae a las mayor de 30,que pasaron ese filtro
+order by 2
+
+PARA VER QUE TABLAS TIENE:
+select * from "NOMBRE TABLA".sys.tables --->sys seria el esquema
+
+
+TAREA:
+
+seleccionar todas las provicias
+ver el nombre de las provincias que su segunda letras sea una u
+mostrar todas las localidades y el nombre de la provincia con id 23
+mostrar el nombre de la localidad, nombre de provincia e id de provincia  donde el id de provincia se encuentre entre 10 y 15
+1 - seleccionar todas las provicias
+2 - ver el nombre de las provincias que su segunda letras sea una u
+3 - mostrar todas las localidades y el nombre de la provincia con id 23
+4 - mostrar el nombre de la localidad, nombre de provincia e id de provincia  donde el id de provincia se encuentre entre 10 y 15
+5 - crear la provincia 25 llamada "la boca" 
+6 - modifi  dicha provincia a 'LA BOCA'
+7 - eliminar las provincias mayores a 24 o llamadas la boca
+

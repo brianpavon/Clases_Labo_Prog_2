@@ -1,0 +1,24 @@
+//las interfaces vienen a ser como clases abstractas
+tienen metodos y atributos, no tienen constructor... no tienen implementacion
+
+
+//es el diseño de los que implementen esta interfaz
+//
+en nuestro ejemplo usamos, la interfaz IMensaje, y lo implementamos en aula
+
+
+
+para implementarla en una clase...
+public class Aula : IMensaje
+
+**Si la clase ya hereda hay que hacer asi por ejemplo
+public class Docente : Personal , IMensaje (clase base, luego interfaz)
+
+
+siempre que implementamos una interfaz, tenemos que implementar los metodos
+en la clase que lo use.
+
+
+LAS INTERFACES OBLIGAN A AGREGAR FUNCIONALIDAD A LAS CLASES
+
+//guia de ejercicios interfaz...

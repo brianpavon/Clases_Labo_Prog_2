@@ -1,0 +1,73 @@
+SERIALIZACION.....
+
+guardamos en un archivo objetos...
+
+me guardo la informacion de los objetos construidos..
+
+serialiacion permite restaurar datos de instancia de objetos
+
+para serializar xml:
+Necesitamos una clase que permita crear un objeto, que "nos va a proveer el archivo"
+
+using(XmlTextWriter writer = new XmlTextWriter())//hasta aca es como archivo de texto
+{
+	//INSTANCIO UNO MAS: que seria el objeto que va a serializar
+	XmlTextWriter ser = new XmlTextWriter(typeof(Dato)); // le paso el tipo de objeto, que clase voy a serializar
+	ser.Serialize(writer,p); // el metodo serialize, abre el objeto y manda el objeto que cree o lo que sea
+	
+}
+
+si una lista esta dentro de una clase, la podria serializar
+
+
+solo se van a serializar los atributos publicos y los valores de Propiedad publicos y tenga geter y seter
+tiene que estar ESCRITO el constructor por defecto, sin parametros, si es que no escribimos otro
+
+
+Solo vamos a serializar informacion, metodos no...
+
+
+
+PARA DESERIALIZAR:
+using(XmlTextReader reader = new XmlTextReader(ruta archivo)
+{
+  XmlTextReader ser = new XmlTextReader(typeof(Objeto));//es la que va deserializar
+  Objeto alQueSeVaCargar;
+  alQueSeVaCargar = (Objeto)ser.Deserialize(reader);//va deserializando y cargando a los objetos
+  deserializa el objeto del archivo indicado
+  
+}
+
+
+//
+[XmlInclude(typeof(Dato))] Dato, es una clase derivada de ClaseBase
+public class ClaseBase
+{
+
+}
+
+
+SERIALIZACION BINARIA:
+serializa objetos tambien...
+
+BinaryFormatter ser = new BinaryFormatter(); BinaryFormatter reemplaza al XmlTextReader o XmlTextWriter
+FileStream --> se usa para cargar el archivo en binario
+
+FileStream fs = new FileStream(ruta del archivo, FileMode.(que hacer, leer, escribir,etc));
+Open = abre,
+Create = crea uno nuevo, no importa si esta o no
+OpenOrCreate = si hay lo abre sino crea uno nuevo
+
+Para serializar en binario, hay que ponerle el tag a la clase
+[Serializable] arriba de la clase
+
+En binario serializa tanto atributos privados como publicos.. y necesita el constructor sin parametros si es que hay mas
+osea que no serian necesarias las propiedades...
+
+
+
+ESPACIO DE NOMBRES...
+
+System.Runtime.Serialization.Formatters.Binary; //para binario
+System.Runtime.Serialization; //solo texto
+System.IO; //tambien hay que agregar este espacio
