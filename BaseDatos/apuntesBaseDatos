@@ -124,8 +124,7 @@ delete Localidad2 --> deja la tabla vacia
 
 como se debe hacer
 
-select * from
-delete Localidad
+delete from Localidad
 where id = 19180
 
 BAJA FISICA ES UN DELETE!!!!
