@@ -1,0 +1,120 @@
+HIlo: thread
+
+es una tarea o subproceso, que se realiza de forma autonoma y se realiza hasta su fin
+
+cuando queremos hacer 2 cosas simultaneamente, vamos a tener que crear un hilo
+y la ejecucion del programa se bifurca
+
+no siempre se pueden correr en paralelo sin que afecte, hay ciertos procesos que van en linea
+
+con thread se hacen tambien las barritas de carga por ejemplo, esa barra lo ejecuta otro proceso
+
+cuando queremos hacer 2 cosas al mismo tiempo se usa threads
+
+
+InvokeRequired, pregunta si esta en ese thread,
+da true si esta en ese hilo, sino false
+con el BeginInvoke, lo llamamos al thread que estamos trabajando, asi lo podemos modificar o trabajar sobre eso
+
+se pueden usar la cantidad de hilos de acuerdo al procesador de cada maquina.. y el sistema operativo
+
+1023 in Framework 4.0 (32-bit environment)
+32767 in Framework 4.0 (64-bit environment)
+250 per core in Framework 3.5
+25 per core in Framework 2.0
+
+TAREA PRACTICA DE HILOS:
+Crear una tabla que se llame Hilos, que tenga id y mensaje
+
+Crear una app de windows form que cada 5 seg cambie el texto del status bar
+por medio un hilo
+
+Que la app tenga un boton que en un archivo de texto agregue el mensaje
+
+
+
+
+APUNTES DE CLASE DE DATOS PARA CREAR UNA SQL STATIC
+
+public static int EjecutarComando(string consulta, List<SqlParameter> parametros)
+        {
+
+            int retorno = -1;
+            try
+            {
+                SqlCommand miComando = new SqlCommand();
+
+                miComando.Connection = miConexion;
+                miComando.CommandText = consulta;
+
+                if (parametros != null)
+                    foreach (SqlParameter item in parametros)
+                    {
+                        miComando.Parameters.Add(item);
+    
+     }
+
+
+                if (miConexion.State != ConnectionState.Open)
+                    miConexion.Open();
+                retorno = miComando.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                miConexion.Close();
+            }
+
+            return retorno;
+        }
+
+}
+
+public static DataTable EjecutarSelect(string consulta, List<SqlParameter> parametros)
+        {
+
+            DataTable miTablita = new DataTable();
+            try
+            {
+                SqlDataReader objetoQueRecibeLaInfo;
+                SqlCommand miComando = new SqlCommand();
+
+                miComando.Connection = miConexion;
+                miComando.CommandText = consulta;
+
+                if(parametros != null)
+                    foreach (SqlParameter item in parametros)
+     
+   {
+                        miComando.Parameters.Add(item);
+                    }
+
+
+                if (miConexion.State != ConnectionState.Open)
+                    miConexion.Open();
+
+                objetoQueRecibeLaInfo = miComando.ExecuteReader();
+            
+                
+                
+                
+                
+                miTablita.Load(objetoQueRecibeLaInfo);
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+        miConexion.Close();
+            }
+
+            return miTablita;
+        }
+}

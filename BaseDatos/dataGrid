@@ -1,0 +1,4 @@
+dataGrid --->
+RowHeaderVisible = false, asi no muestra la columna fea
+AutoSizeColumnsMode = DataGridViewAutoSizeColumnMode.Fill
+.AllowUserToAddRows = false;

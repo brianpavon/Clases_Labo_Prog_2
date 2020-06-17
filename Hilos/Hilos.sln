@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frmHilos", "frmHilos\frmHilos.csproj", "{5297A17A-269A-4C56-A0C1-263609F492B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticaHilos", "PracticaHilos\PracticaHilos.csproj", "{DE0FC79B-C336-4389-8A1E-38FC5759BD64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5297A17A-269A-4C56-A0C1-263609F492B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5297A17A-269A-4C56-A0C1-263609F492B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5297A17A-269A-4C56-A0C1-263609F492B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5297A17A-269A-4C56-A0C1-263609F492B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE0FC79B-C336-4389-8A1E-38FC5759BD64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE0FC79B-C336-4389-8A1E-38FC5759BD64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE0FC79B-C336-4389-8A1E-38FC5759BD64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE0FC79B-C336-4389-8A1E-38FC5759BD64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5359CAAF-FE79-4523-BDD9-1507FEC2B366}
+	EndGlobalSection
+EndGlobal

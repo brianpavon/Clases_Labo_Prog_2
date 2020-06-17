@@ -2,6 +2,7 @@ mi instancia SQLEXPRESS01
 administradores LAPTOP-Q1OJ1113\brian
 caracteristicas instaladas SQLENGINE
 
+SQL Server Managment Studio, esto es un ide que administra motores de base de datos que hay en cada maquina
 
 Los registros se separan en tablas
 
@@ -107,7 +108,7 @@ where id = 19180 //este es el id del ejemplo
 --------------------------------------------------------------
 
 INSERT
-insert int tabla
+insert into tabla
 (campos)
 values
 (valores)
