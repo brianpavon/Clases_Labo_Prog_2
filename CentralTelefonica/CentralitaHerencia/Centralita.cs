@@ -147,14 +147,22 @@ namespace CentralitaHerencia
 
         public static Centralita operator +(Centralita c, Llamada nuevaLlamada)
         {
-            
-            for (int i = 0; i < c.listaDeLlamadas.Count; i++)
+            if(c.listaDeLlamadas.Count == 0)
             {
-                if(!(c == nuevaLlamada))
+                c.AgregarLlamada(nuevaLlamada);
+            }
+            else if(c.listaDeLlamadas.Count > 0)
+            {
+                for (int i = 0; i < c.listaDeLlamadas.Count; i++)
                 {
-                    c.AgregarLlamada(nuevaLlamada);
+                    if (!(c == nuevaLlamada))
+                    {
+                        c.AgregarLlamada(nuevaLlamada);
+                    }
                 }
             }
+            
+            
             return c;
         }
 
