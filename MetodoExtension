@@ -1,0 +1,27 @@
+Metodo de extension... puedo no estar en el mismo namespace,
+
+pero se lo puedo pasar a otra clase...
+
+hago una clase, static para agregarla a otra clase... en caso de que no tenga acceso
+si tuvieramos una clase cerrada... se lo puedo agregar desde otro lado
+
+la firma seria...
+public static TIPO NOMBRE (this "Clase a modificar" nombreDeLaVariable,) 
+{
+	nombreDeLaVariable.
+}
+
+
+los metodos de extension, se agregan a esa clase, pero sin que este definida en ella
+
+cobra sentido, cuando queremos manejar algo a lo que no tenemos accesibilidad
+
+
+no sirve para usar en clases privadas...
+y se tiene acceso a las atributos publicos solamente.
+
+tiene que ser el using de la clase a la que le voy a definir el metodo de extension
+
+es un metodo estatico, que lo uso como instancia en una clase que se pasa por parametro
+
+Puedo crear el metodo en otro proyecto, siempre y cuando esten los using y las referencias

@@ -1,0 +1,39 @@
+Eventos, que se usan cuando saltan de un objeto a otro...
+Es una forma de enviar un "mensaje" de un objeto a otro
+Se lanzan eventos para que se ejecuten ciertas tareas..
+
+Para hacer eventos necesitamos delegados...
+
+una firma de delegado es:
+
+public delegate void MiDelegado(int limite);
+//este delegado va a lanzar un msj por ejemplo... cuando? no se sabe hay que definirlo..
+ delegado se declara a nivel de clase...
+ 
+ es el encargado de tener el grupo de manejadores para poder llamarlo...
+ una vez que tengamos el delegado podemos crear el evento
+ 
+ 1)declaramos el delegado, a nivel de clase
+ 2)declaramos el evento
+ 
+ con invoke llamo a ese evento... en nuestro caso es un string lo que debe recibir
+ 
+ += creo un nuevo manejador
+ 
+ Los manejadores los puedo hacer en el codigo, no solo en el designer..
+ 
+ 
+ Delegado es un puntero a una o varias funciones..
+ Cuando definimos un delegado estamos definiendo el tipo.
+ El delegado, solo recibe metodos de cierto tipo...
+ 
+ El delegado se puede instanciar...
+ 
+ tipo de dato "nombre" = new Mensajero(nombredeleventoapasar);
+ 
+ El delegado, se usa llamando al invoke, nombre.invoke("le pasamos el parametro);
+ 
+ 
+ Eventos, es un comportamiento asociado a lo que estoy haciendo,
+ los eventos reciben delegados, punteros a funciones,
+ Al evento lo llamo con Invoke.
