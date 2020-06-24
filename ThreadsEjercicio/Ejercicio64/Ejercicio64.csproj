@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A6672F85-25FE-4DAA-A52E-BE3B63543798}</ProjectGuid>
+    <ProjectGuid>{1C6C2476-9CD6-4100-8831-A03F1A0A3CCD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>PracticaEventos</RootNamespace>
-    <AssemblyName>PracticaEventos</AssemblyName>
+    <RootNamespace>Ejercicio64</RootNamespace>
+    <AssemblyName>Ejercicio64</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Automovil.cs" />
+    <Compile Include="Caja.cs" />
+    <Compile Include="Negocio.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
